@@ -1,0 +1,177 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url('images/loginbackg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+}
+.navbar a{
+  position: relative;
+  font-size: 19px;
+  color: #fff;
+  margin-right: 30px;
+  text-decoration: none;
+  }
+
+
+  
+
+nav a:hover,
+nav a.active{
+   text-decoration: underline;
+}
+
+
+.container
+{
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+h2
+{
+  color: #ffff;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+  
+h2:hover{
+  cursor:pointer;
+  transform: scale(1.2);
+  transition: 0.3s all;
+  
+}
+
+.form-group
+{
+  position: relative;
+  width: 330px;
+  margin: 30px 0;
+  border-bottom: 2px solid #ffff;
+}
+
+.form-group input
+{
+  width: 100%;
+  height: 50px;
+  padding: 0 35px 0 10px;
+  font-size: 1.2em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.form-group label
+{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+ input:focus ~ label,
+ input:valid ~ label{
+  top: -5px;
+}
+
+.form-group i
+{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  
+  color: #ffff;
+  font-size: 1.2em;
+}
+
+p
+{
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+}
+
+p a
+{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+p a:hover
+{
+  text-decoration: underline;
+
+}
+
+#btn
+{
+  width: 90%;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0px;
+  
+  cursor: pointer;
+ 
+}
+
+#btn:hover
+{
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.5s;
+}
